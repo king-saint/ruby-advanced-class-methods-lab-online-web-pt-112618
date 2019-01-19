@@ -61,7 +61,7 @@ end
   end
   
   def self.new_from_filename(song_name)
-    title = song_name.split(" - " || ".mp3")
+    title = song_name.split(" - ")
     self.new_by_name(title[1])
     @artist_name = title[0]
     
