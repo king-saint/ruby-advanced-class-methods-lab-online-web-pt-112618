@@ -76,7 +76,7 @@ end
   end
   
   def self.alphabetical
-    @@all = @@all.collect.sort
+    @@all = @@all.sort
     @@all
   end
   
