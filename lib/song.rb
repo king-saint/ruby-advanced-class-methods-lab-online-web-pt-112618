@@ -2,8 +2,8 @@ class Song
   @@all = []
   attr_accessor :artist_name, :name
 
-  def initialize(name)
-   @name =  name
+  def initialize
+   
   end
 
   def self.create
@@ -60,8 +60,8 @@ class Song
     song 
   end  
   
-  def self.create_from_filename(song_name)
-    new = song_name.split("-")
+  def self.create_from_filename(title)
+    new = title.split("-")
     song = self.create_by_name(new[1].gsub(".mp3", ""))
     song.artist_name = new[0]
     song
