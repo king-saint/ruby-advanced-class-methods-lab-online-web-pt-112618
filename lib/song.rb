@@ -44,14 +44,11 @@ class Song
   
   def self.find_or_create_by_name(song_name)
     self.find_by_name(song_name) || self.create_by_name(song_name)
-     
-  
-end
+  end
   
 
   def self.create_from_filename(new_song)
       song_array = new_song.split("-"|| ".")
-      
       song = song_array[1]
       @artist_name = song_array[0]
       
