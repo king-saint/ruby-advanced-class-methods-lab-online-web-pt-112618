@@ -61,10 +61,6 @@ end
   
   end
   
-  def self.alphabetical
-    @@all.sort.collect
-  end
-  
   def self.new_from_filename(song_name)
     title = song_name.split(" - " || ".mp3")
     self.new_by_name(title[1])
@@ -74,6 +70,10 @@ end
   
   def self.create_from_filename(song_name)
     
+  end
+  
+  def self.alphabetical
+    @@all.sort.collect
   end
   
    def self.destroy_all
