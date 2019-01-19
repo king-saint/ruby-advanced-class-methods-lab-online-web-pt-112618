@@ -76,7 +76,9 @@ end
   end
   
   def self.alphabetical
-    @@all = @@all.sort
+    newa = []
+    @@all.collect do |song_title|
+      newa << song
     @@all
   end
   
