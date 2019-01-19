@@ -74,11 +74,9 @@ end
   end
   
   def self.alphabetical
-    newa = []
-    @@all.collect do |song_title|
-      newa << song_title
+    @@all.sort_by do |song|
+      song.name
     end
-    newa = newa.sort
   end
   
    def self.destroy_all
