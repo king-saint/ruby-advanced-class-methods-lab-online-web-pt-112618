@@ -77,7 +77,7 @@ end
   end
   
   def self.alphabetical
-    @@all.sort
+    @@all = @@all.collect.sort
   end
   
    def self.destroy_all
