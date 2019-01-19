@@ -51,8 +51,6 @@ class Song
       song_array = new_song.split("-"|| ".")
       song = song_array[1]
       @artist_name = song_array[0]
-      
-  
   end
   
   def self.new_from_filename(song_name)
