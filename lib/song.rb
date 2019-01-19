@@ -70,7 +70,7 @@ end
     new = song_name.split("-")
     song = self.new_by_name(new[1].gsub(".mp3", ""))
     song.artist_name = new[0]
-    song
+    
   end
   
   def self.alphabetical
