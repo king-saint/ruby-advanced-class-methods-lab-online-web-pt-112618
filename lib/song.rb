@@ -72,8 +72,8 @@ end
     new = song_name.split("-" | ".")
     
     song = self.new
-      song.name = new[1]
-      @artist_name = new[0]
+    song.name = new[1]
+    @artist_name = new[0]
   end
   
   def self.alphabetical
