@@ -78,7 +78,7 @@ end
   def self.alphabetical
     newa = []
     @@all.collect do |song_title|
-      newa << song
+      newa << song_title
     end
     newa.sort
   end
