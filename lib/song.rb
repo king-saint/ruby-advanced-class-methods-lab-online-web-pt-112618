@@ -69,6 +69,7 @@ end
   end  
   
   def self.create_from_filename(song_name)
+    new = song_name.split("-" | ".")
     
   end
   
