@@ -68,9 +68,9 @@ end
   
   def self.create_from_filename(song_name)
     new = song_name.split("-")
-    song = self.new
-    song.name = new[1]
-    @artist_name = new[0]
+    song = self.new_by_name(title[1].gsub(".mp3", ""))
+    song.artist_name = title[0]
+    song
   end
   
   def self.alphabetical
