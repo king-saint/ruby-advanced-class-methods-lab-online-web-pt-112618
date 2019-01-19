@@ -80,7 +80,7 @@ end
     @@all.collect do |song_title|
       newa << song_title
     end
-    newa.sort
+    newa = newa.sort
   end
   
    def self.destroy_all
